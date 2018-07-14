@@ -1,24 +1,77 @@
-﻿<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-        a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-        is an ideal platform for building RESTful applications on the .NET Framework.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+﻿<h1 class="text-primary text-center">Instrumentos</h1>
+<div class="container">
+    <div class="row">
+
+        <div class="col-12 col-sm-6 col-md-3 instrument">
+            <section>
+                <img src="~/Content/img/piano.png" class="img-fluid" />
+                <br />
+                <hr />
+                <a href="#" class="btn btn-outline-info btn-lg btn-block">Piano</a>
+            </section>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 instrument">
+            <section>
+                <img src="https://previews.123rf.com/images/cristianbr/cristianbr1004/cristianbr100400024/6824684-illustration-of-a-stave-on-white-background.jpg" class="img-fluid" />
+                <br />
+                <hr />
+                <a href="@Url.Action("Lyrics")" class="btn btn-outline-info btn-lg btn-block">Letra</a>
+            </section>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 instrument">
+            <section>
+                <img src="https://image.freepik.com/vector-gratis/diseno-de-violin_1113-18.jpg" class="img-fluid" />
+                <br />
+                <hr />
+                <a href="@Url.Action("Violin")" class="btn btn-outline-info btn-lg btn-block">Violin</a>
+            </section>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 instrument">
+            <section>
+                <img src="https://image.shutterstock.com/image-photo/metal-flute-commonly-used-school-260nw-38278045.jpg" class="img-fluid" />
+                <br />
+                <hr />
+                <a href="#" class="btn btn-outline-info btn-lg btn-block">Flauta</a>
+            </section>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 instrument">
+            <section>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdf7qd061VHeD5Mg3-6q-Ij50iPaapU7NJ58JjHXgI1aLjUwua" class="img-fluid" />
+                <br />
+                <hr />
+                <a href="#" class="btn btn-outline-info btn-lg btn-block">Trompeta</a>
+            </section>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 instrument">
+            <section>
+                <img src="data:image/png;base64,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" class="img-fluid" />
+                <br />
+                <hr />
+                <a href="@Url.Action("Clarinet")" class="btn btn-outline-info btn-lg btn-block">Clarinete</a>
+            </section>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 instrument">
+            <section>
+                <img src="http://www.fuzzimo.com/wp-content/uploads/2011/01/fzm-Vector-Classical-Acoustic-Guitars-02.jpg" class="img-fluid" />
+                <br />
+                <hr />
+                <a href="@Url.Action("Guitar")" class="btn btn-outline-info btn-lg btn-block">Guitarra</a>
+            </section>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 instrument">
+            <section>
+                <img src="data:image/jpeg;base64,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" class="img-fluid" />
+                <br />
+                <hr />
+                <a href="@Url.Action("Projector")" class="btn btn-outline-info btn-lg btn-block">Proyector</a>
+            </section>
+        </div>
     </div>
 </div>

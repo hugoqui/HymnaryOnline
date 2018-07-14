@@ -1,17 +1,115 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿body{overflow-x:hidden;}
+
+.btn {
+    border-radius: 0
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.instrument {
+    margin-top: 6%;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+    .instrument section {
+        background-color: #ebebeb;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .instrument img {
+        height: 150px
+    }
+
+.letter {
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    /*border-radius:50%;*/
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.blue {
+    background: #3830f8
+}
+
+.red {
+    background: #b11919
+}
+
+.green {
+    background: #21c24c
+}
+
+.purple {
+    background: #9a30f8
+}
+
+.list-group-item {
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+    .list-group-item:hover {
+        background: #d7d7d7
+    }
+
+
+
+.bubble {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    animation: animateElement linear 1s;
+    animation-iteration-count: 1;
+    width: 95%;    
+}
+
+@keyframes animateElement {
+    0% {
+        opacity: 0;
+        /*transform: translate(0px,100px);*/
+    }
+
+    100% {
+        opacity: 1;
+        /*transform: translate(0px,0px);*/
+    }
+}
+
+.score-sheet {
+    animation: animateScore linear .6s;
+    animation-iteration-count: 1;
+    height:100%;
+    max-width: 95%;
+}
+
+@keyframes animateScore {
+    0% {
+        opacity: 0;
+        transform: translate(500px,0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+}
+
+
+#score {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    text-align: center;
+    background: #fff;
+    padding:10px;
 }
